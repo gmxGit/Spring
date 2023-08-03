@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!--<bean id="UserDao" class="gmx.Dao.impl.UserDaoImpl" scope="prototype"></bean> -->
+     <!-- 静态工厂
+     <bean id="UserDao"  class="factory.staticfactory" factory-method="getBean" ></bean>
+     -->
+<!--动态工厂
+    <bean id="factory" class= "factory.DynamicFactory "></bean>
+    <bean id="UserDao" factory-bean="factory" factory-method="getUserDao"></bean>
+-->
+<bean id="UserService" class="service.impl.UserServiceimpl">
+<property name="userDao" ref="UserDao"></property>
+</bean>
+
+    <bean id="UserDao" class="gmx.Dao.impl.UserDaoImpl">
+        <property name="username" value="zhangsan"/>
+        <property name="age" value="18"/>
+    </bean>
+</beans>
