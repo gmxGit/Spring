@@ -4,9 +4,10 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/SpringIOC/pom.xml" />
         <option value="$PROJECT_DIR$/Springboot/pom.xml" />
-        <option value="$PROJECT_DIR$/spring_ioc_anno/pom.xml" />
+        <option value="$PROJECT_DIR$/FileUploadDownload/pom.xml" />
+        <option value="$PROJECT_DIR$/IOCSPRING/pom.xml" />
+        <option value="$PROJECT_DIR$/TestStatic/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
@@ -15,7 +16,7 @@
       </set>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_19" default="true" project-jdk-name="19" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
