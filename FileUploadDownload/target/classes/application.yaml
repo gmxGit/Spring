@@ -1,0 +1,17 @@
+server:
+  port: 8099
+  servlet:
+    context-path:/org/file/
+  tomcat:
+    uri-encoding:utf-8
+spring:
+  servlet:
+    multipart:
+      max-file-size:10MB
+      max-request-size:10MB
+  freemarker:
+    request-context-attribute:request
+    charset:UTF-8
+    template-loader-path:classpath:/
+    suffix:.ftl
+    prefix:/view
